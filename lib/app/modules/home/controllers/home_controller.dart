@@ -16,5 +16,7 @@ class HomeController extends GetxController {
 
   @override
   void onClose() {}
-  void increment() => count.value++;
+  void kahitari() => count.value++;
+
+  void kahitariVegla() => count.value--;
 }
