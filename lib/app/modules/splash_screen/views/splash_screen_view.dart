@@ -1,3 +1,4 @@
+import 'package:cp_base_auth_app/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,11 +22,11 @@ class SplashScreenView extends GetView<SplashScreenController> {
                 )),
             ElevatedButton(
               onPressed: () {
-                controller.changeName();
-                // Get.snackbar('Going home!', 'Off we go!',
-                //     snackbarStatus: (status) {
-                //   if (status == SnackbarStatus.CLOSED) Get.toNamed(Routes.HOME);
-                // });
+                //controller.changeName();
+                Get.snackbar('Going home!', 'Off we go!',
+                    snackbarStatus: (status) {
+                  if (status == SnackbarStatus.CLOSED) Get.offNamed(Routes.HOME);
+                });
               },
               child: Icon(Icons.home),
             )

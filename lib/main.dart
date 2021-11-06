@@ -7,8 +7,9 @@ void main() {
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
-      title: "My Login App",
+      title: "Login App",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
     ),
