@@ -1,9 +1,9 @@
+import 'package:cp_base_auth_app/app/routes/app_pages.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
   //TODO: Implement HomeController
 
-  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
@@ -16,7 +16,8 @@ class HomeController extends GetxController {
 
   @override
   void onClose() {}
-  void kahitari() => count.value++;
 
-  void kahitariVegla() => count.value--;
+  goToThemeSwitcher() {
+    Get.offNamed(Routes.THEME_SWITCHER);
+  }
 }

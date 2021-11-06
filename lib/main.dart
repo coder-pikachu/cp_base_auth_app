@@ -7,11 +7,12 @@ void main() {
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
+      theme: ThemeData.light(), // Initial theme
+      darkTheme: ThemeData.dark(), // Initial dark theme
       title: "Login App",
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
+      defaultTransition: Transition.fadeIn,
     ),
   );
 }

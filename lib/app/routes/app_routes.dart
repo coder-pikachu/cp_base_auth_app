@@ -5,12 +5,12 @@ abstract class Routes {
   Routes._();
 
   static const HOME = _Paths.HOME;
-  static const SPLASH_SCREEN = _Paths.SPLASH_SCREEN;
   static const APP_STATE = _Paths.APP_STATE;
+  static const THEME_SWITCHER = _Paths.THEME_SWITCHER;
 }
 
 abstract class _Paths {
   static const HOME = '/home';
-  static const SPLASH_SCREEN = '/splash-screen';
   static const APP_STATE = '/app-state';
+  static const THEME_SWITCHER = '/theme-switcher';
 }

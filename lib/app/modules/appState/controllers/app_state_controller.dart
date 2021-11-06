@@ -1,10 +1,18 @@
-import 'package:get/get.dart';
+import 'package:cp_base_auth_app/app/modules/appState/controllers/app_state_base_controller.dart';
 
-class AppStateController extends GetxController {
-    //TODO: Implement AppStateController
-    RxBool isDarkModelOn = false.obs;
+//Singleton pattern for base controller
+class AppStateController extends AppStateBaseController {
+  static final AppStateController _instance = AppStateController._internal();
 
-    AppStateController(){
-        print("App State Created!");
-    }
+  factory AppStateController() {
+    return _instance;
+  }
+  AppStateController._internal() {
+    //TODO: Store in shared preferences
+    switchToLight();
+  }
+// Make this global / singleton
+
+// Create operations for changing the theme
+
 }
