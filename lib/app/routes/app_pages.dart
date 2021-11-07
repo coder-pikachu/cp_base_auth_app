@@ -19,9 +19,9 @@ class AppPages {
       binding: HomeBinding(),
     ),
     GetPage(
-      name: _Paths.THEME_SWITCHER,
-      page: () => ThemeSwitcherView(),
-      binding: ThemeSwitcherBinding(),
-    ),
+        name: _Paths.THEME_SWITCHER,
+        page: () => ThemeSwitcherView(),
+        binding: ThemeSwitcherBinding(),
+        title: "Hello"),
   ];
 }
