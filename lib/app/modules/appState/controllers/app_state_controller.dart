@@ -7,9 +7,9 @@ class AppStateController extends AppStateBaseController {
   factory AppStateController() {
     return _instance;
   }
-  AppStateController._internal() {
+  AppStateController._internal() : super() {
     //TODO: Store in shared preferences
-    switchToLight();
+    //switchToLight();
   }
 // Make this global / singleton
 
